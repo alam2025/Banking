@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alam Asia Bank Limited</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="mx-auto">
+    
+    
+    <div id="login-area">
+        <h1 class="text-center">Welcome To Alam Asia Bank Limited</h1>
+        
+        <div class="submitt-area">
+            <h4>Login</h4>
+            <input type="email" name="email" class="form-control" id="" placeholder="Email">
+            <br>
+            <input type="password" name="password" class="form-control" id="" placeholder="password">
+            <br>
+            <button id="login" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h4>Deposit</h4>
+                    <h2>$ <span id="currentDeposit">00</span> </h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h4>Withdraw</h4>
+                    <h2>$ <span id="currentWithdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h4>Balance</h4>
+                    <h2>$ <span id="currentBalance">1200</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submitt-area">
+                    <h2>Deposit</h2>
+                    <br>
+                    <input id="depositAmount" type="text" class="form-control" placeholder="$ amount to withdraw" >
+                    <br>
+                    <button id="deposit" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="submitt-area">
+                <h2>Withdraw</h2>
+                <br>
+                <input id="withdrawAmount" type="text" class="form-control" placeholder="$ amount to withdraw">
+                <br>
+                <button id="withdrawBtn" class="btn btn-success">Withdraw</button>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>
